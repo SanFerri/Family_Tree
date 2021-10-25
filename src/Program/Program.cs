@@ -7,13 +7,23 @@ namespace Program
     {
         static void Main(string[] args)
         {
-            Node n1 = new Node(1);
-            Node n2 = new Node(2);
-            Node n3 = new Node(3);
-            Node n4 = new Node(4);
-            Node n5 = new Node(5);
-            Node n6 = new Node(6);
-            Node n7 = new Node(7);
+            Persona persona1 = new Persona(89, "Alberto");
+            Persona persona2 = new Persona(77, "Romina");
+            Persona persona3 = new Persona(64, "Romina");
+            Persona persona4 = new Persona(53, "Romina");
+            Persona persona5 = new Persona(42, "Romina");
+            Persona persona6 = new Persona(34, "Romina");
+            Persona persona7 = new Persona(19, "Romina");
+            Persona persona8 = new Persona(2, "Romina");
+            
+            Node n1 = new Node(persona1);
+            Node n2 = new Node(persona2);
+            Node n3 = new Node(persona3);
+            Node n4 = new Node(persona4);
+            Node n5 = new Node(persona5);
+            Node n6 = new Node(persona6);
+            Node n7 = new Node(persona7);
+            Node n8 = new Node(persona8);
 
             n1.AddChildren(n2);
             n1.AddChildren(n3);
