@@ -33,6 +33,18 @@ namespace Library
         {
             this.children.Add(n);
         }
-        
+
+        public void Accept(Visitor visitor)
+        {
+            visitor.Visit(this);
+        }
+
+
+        public int GetSumaEdades()
+        {
+            Visitor visitor = new PersonaVisitor(); 
+            this.Accept(visitor); 
+            return visitor.sumaEdades; 
+        }
     }
 }

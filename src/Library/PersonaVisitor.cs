@@ -4,15 +4,14 @@ namespace Library
     {
         public override void Visit(Node node) 
         { 
+            sumaEdades += node.Persona.edad; 
             foreach(Node children in node.Children)
             {
-                children.Persona.Accept(this);
+                if(children.Children.Count != 0)
+                {
+                    children.Accept(this);
+                }
             }
         } 
-
-        public override void Visit(Persona persona)
-        {
-            sumaEdades += persona.edad;
-        }
     }    
 }

@@ -10,10 +10,5 @@ namespace Library
             this.edad = edad;
             this.nombre = nombre;
         }
-
-        public void Accept(Visitor visitor) 
-        { 
-            visitor.Visit(this); 
-        } 
     }
 }

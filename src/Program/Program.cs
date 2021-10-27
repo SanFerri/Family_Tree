@@ -15,7 +15,7 @@ namespace Program
             Persona persona6 = new Persona(34, "Romina");
             Persona persona7 = new Persona(19, "Romina");
             Persona persona8 = new Persona(2, "Romina");
-            
+
             Node n1 = new Node(persona1);
             Node n2 = new Node(persona2);
             Node n3 = new Node(persona3);
@@ -33,8 +33,9 @@ namespace Program
 
             n3.AddChildren(n6);
             n3.AddChildren(n7);
+            n3.AddChildren(n8);
 
-            // visitar el árbol aquí
+            n3.GetSumaEdades();
         }
     }
 }
