@@ -39,7 +39,18 @@ namespace Library
             visitor.Visit(this);
         }
 
-
+        public void NombreMasLargo()
+        {
+            Visitor visitor = new NombreMasLargoVisitor();
+            this.Accept(visitor);
+            Console.WriteLine($"{visitor.MasLargo} {visitor.HijoConNombreMasLargo}");
+        }
+        public void MasGrande()
+        {
+            Visitor visitor = new MayorVisitor();
+            this.Accept(visitor);
+            Console.WriteLine($"{visitor.MasGrande} {visitor.HijoMasGrande}");
+        }
         public int GetSumaEdades()
         {
             Visitor visitor = new PersonaVisitor(); 

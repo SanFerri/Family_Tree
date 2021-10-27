@@ -35,6 +35,11 @@ namespace Program
             n3.AddChildren(n7);
             n3.AddChildren(n8);
 
+            // Y con estos metodos hay errores que no llegue a solucionar.
+            n3.NombreMasLargo();
+            n3.MasGrande();
+
+            // Aqui me sale stack overflow.
             n3.GetSumaEdades();
         }
     }
